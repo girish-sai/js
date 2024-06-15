@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 50rem;
+      height: 10rem;
+      background-color: gold;
+      
+      text-wrap: wrap;
+      flex-direction: column-reverse;
+      flex-wrap: nowrap;
+      
+    }
+    #divsection{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    button{
+
+      width: 200px;
+      height: 50px;
+    }
+
+    .hidden-content{
+      display: none;
+    }
+    .hidden-content.reveal-btn{
+      display: block;
+    }
+
+    #child{
+      background-color: black;
+      width: 30px;
+      height: 30px;
+    }
+    ul{
+      background-color: pink;
+   width: 50%;
+   margin: auto;
+  text-align: center;
+   font-size: 60px;
+   list-style: none;
+   margin-top: 100px;
+    }
+    li{
+    width: 260px;
+    height: 60px;
+    border: 2px solid black;
+    margin: 10px 0px;
+    text-align: center;
+    align-content: center;
+    }
+  </style>
+</head>
+<body>
+  <ul id="list">
+    <li  id="girish">girish sai</li>
+    <li id="nitish">nitish Sai</li>
+    <li id="giridhar">Giridhar</li>
+    <li id="bhavya">bhavya</li>
+    <li id="gowthami">Gowthuu</li>
+
+  </ul>
+  <!-- <div id="parent">
+    <div id="child">
+      <button id="buttonn">
+        click mee !!!!
+      </button>
+    </div>
+  </div> -->
+  <script>
+//  const revealbtn=document.querySelector(".reveal-btn ");
+
+//  const hiddencontent=document.querySelector(".hidden-content ");
+
+//  function revealcontent(){
+// //   if(hiddencontent.classList.contains('reveal-btn')){
+// //     hiddencontent.classList.remove('reveal-btn');
+// //   }else{
+// //     hiddencontent.classList.add('reveal-btn');
+// //   }
+// //  }
+// //    revealbtn.addEventListener("click",revealcontent)
+//  }
+
+// window.addEventListener("click",function(){
+//   console.log("windoww");
+// })
+// document.getElementById("parent").addEventListener("click",function(){
+//   console.log("div Prent")
+// });
+// document.getElementById("child").addEventListener("click",function(){
+//   console.log("Child div")
+// })
+// document.getElementById("buttonn").addEventListener("click",function(e){
+//   console.log(e)
+// })
+
+document.querySelector("#list").addEventListener("click",function(e){
+
+  console.log(e.target.getAttribute("id")+"is Playing");
+  if(e.target.matches("li")){
+  document.getElementById(e.target.getAttribute("id")).style.backgroundColor="lightgrey";
+  }
+})
+
+</script>
+</body>
+
+</html>

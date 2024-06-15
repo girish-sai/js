@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <p>This is girish Sai</p>
+  <p>This is nitish Sai</p>
+  <p>I am girish Sai dhulipala</p>
+  <p>Hope this will reach yo in good health</p>
+  <form action="" id="thisform">
+    <input type="text" name="" id="" placeholder="Enter Name" value="girishsai">
+    <input type="text" placeholder="Enter Password" value="nitishsai">
+   
+  </form>
+  <div id="div1"></div>
+  <h1 id="diaplay"></h1> -->
+
+  <div class="parent">
+    <ul class="list">
+      <li class="chilist"></li>
+      <li class="chilist"></li>
+    </ul>
+  </div>
+  <input type="text" id="fname" oninput="uppercase()">
+  <h1 id="heading"></h1>
+  <script>
+  //   var paragraphs=document.querySelectorAll('p');
+  //   paragraphs.forEach(paragraph => paragraph.style.display='inline-block');
+  //   paragraphs.forEach(paragraph => paragraph.style.backgroundColor='powderblue');
+  //   const formss =document.forms["thisform"];
+  //   let text="";
+  //   for(let i=0;i < formss.length;i++){
+  //     text+=formss.elements[i].value +"<br>" ;
+  //      }
+  //      document.getElementById("diaplay").innerHTML=text;
+  //      var ddocc=document.body
+  //  var divv=document.createElement("div");
+  //  divv.style.backgroundColor="gold"
+  //  divv.style.height="100px"
+  //  ddocc.appendChild(divv)
+  //      var chidiv=document.createElement("h1");
+  //      chidiv.innerHTML="thisisgirishDDDDHDH";
+  //      chidiv.style.backgroundColor="pink"
+  //      divv.appendChild(chidiv);
+
+  var select=document.querySelector(".list");
+  var addh1=document.createElement("h1");
+  addh1.innerHTML="Thisis girissai andHow are u";
+
+  select.parentNode.style.color="purple";
+  select.parentNode.appendChild(addh1)
+
+  function uppercase(){
+    var x=document.getElementById("fname");
+    x.value=x.value.toUpperCase();
+   
+  }
+      </script>
+</body>
+</html>
